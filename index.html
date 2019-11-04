@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>National Park Search</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <section>
+      <h1>Looking for state parks to visit?</h1>
+
+      <h2>Please enter one or more state codes that you are interested in. If you are looking at more than one state, please seperate with a comma.</h2>
+
+      <p>State codes are: AL, AK, AZ, AR, CA, CO, CT, DE, FL, GA, HI, ID, IL, IN, IA, KS, KY, LA, ME, MD, MA, MI, MN, MS, MO, MT, NE, NV, NH, NM, NY, NC, ND, OH, OK, OR, PA, RI, SC, SD, TN, TX, UT, VT, VA, WA, WV, WI, WY.</p>
+      <p>U.S. territory codes: AS, GU, MH, FM, MP, PW, PR, VI.</p>
+
+      <form>
+        <label>State Codes</label> 
+        <input type="text" class="stateCode" required>
+
+        <label>Number of results desired</label>
+        <input type="number" class="maxCount" value="10" max="50">
+
+        <input type="submit" class="submit" value="Submit">
+      </form> 
+    </section>
+
+    <section class="hidden results">
+
+    </section>
+
+    <section class="hidden errorMessage">
+
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

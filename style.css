@@ -1,0 +1,20 @@
+.hidden {
+    visibility: hidden;
+  }
+  
+  .errorMessage {
+    padding-top: 30px;
+  }
+  
+  .results {
+    padding-top: 30px;
+  }
+  
+  div {
+    border: 5px solid black;
+    padding-bottom: 5px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
